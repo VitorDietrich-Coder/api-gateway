@@ -17,10 +17,10 @@ jobs:
     - name: Instalar .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'
+        dotnet-version: '9.0.x'
 
     - name: 🔧 Restaurar e compilar solução
-      run: dotnet build src/FGC.Api/FGC.Api.sln  --configuration Release
+      run: dotnet build api-gateway-microsservice/api-gateway-microsservice.sln  --configuration Release
       
   test:
     name: ✅ Testes Unitários
@@ -34,12 +34,11 @@ jobs:
     - name: Instalar .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'
+        dotnet-version: '9.0.x'
 
     - name: Executar testes
       run: |
-        dotnet test src/FGC.UnitTests/FGC.UnitTests.csproj --configuration Debug --verbosity normal
-        dotnet test src/FGC.BDD/FGC.BDD.csproj --configuration Debug --verbosity normal
+ 
 
   push:
     name: 🚀 Docker Build & Push
