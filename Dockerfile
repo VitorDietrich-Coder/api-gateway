@@ -15,7 +15,7 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Copiar csproj (cache de restore)
-COPY api-gateway-microsservice/api-gateway-microsservice.csproj api-gateway-microsservice.API/
+COPY api-gateway-microsservice/api-gateway-microsservice.csproj api-gateway-microsservice/
  
 RUN dotnet restore api-gateway-microsservice/api-gateway-microsservice.csproj
 
