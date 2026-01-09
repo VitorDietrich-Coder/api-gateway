@@ -125,3 +125,10 @@ Se aprovado → Payments publica payment.completed.
 Games consome payment.completed, atualiza compras e ElasticSearch.
 
 Usuário agora vê que o jogo foi comprado e pode aparecer nas recomendações.
+
+
+
+https://github.com/VitorDietrich-Coder/games-service
+https://github.com/VitorDietrich-Coder/payments-service
+https://github.com/VitorDietrich-Coder/users-service
+https://github.com/VitorDietrich-Coder/microservice-lambda-repo
